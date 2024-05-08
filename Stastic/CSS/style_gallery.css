@@ -1,0 +1,157 @@
+body {
+    overflow: hidden;
+    background-color: black;
+}
+@media (max-width: 500px) {
+
+    .divider,
+    .photos {
+    display: none;
+}
+
+    /*  */
+    .div_mob{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        left: -5%;
+        top: 0%;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+/*  */
+    .mob_photo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        top: 18%;
+        align-items: center; /* Центрування по вертикалі */
+        flex-direction: column; /* Організація у колонку */
+        z-index: 1;
+        left: -2%;
+    }
+    /*  */
+    .png_mob {
+        width: 180px;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .navi{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        top: 90%;
+    }
+    
+    .left_b {
+        position: relative;
+        background-image: url("/Stastic/Photo/gallery/Vector.png");
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 10%;
+        height: 60%;
+        border: none;
+        left: 15%;
+        z-index: 2;
+    }
+    
+    .left_b:active {
+        background-color: #FFF9C0;
+    }
+    
+    .right_b {
+        position: relative;
+        background-image: url("/Stastic/Photo/gallery/material-symbols_arrow-back-rounded.png");
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 10%;
+        height: 60%;
+        border: none;
+        left: 55%;
+        z-index: 2;
+    }
+    .right_b:active {
+        background-color: #FFF9C0;
+    }
+    
+
+}
+
+
+
+
+@media  (min-width: 993px)  {
+
+    .div_mob, .mob_photo, .png_mob {
+    display: none;
+}
+
+
+.divider {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    left: 0%;
+    top: 0%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.photos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    margin: 10px;
+}
+
+.navi{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+}
+
+.left_b {
+    position: relative;
+    background-image: url("/Stastic/Photo/gallery/Vector.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 3%;
+    height: 60%;
+    border: none;
+    left: 30%;
+    z-index: 2;
+}
+
+.left_b:active {
+    background-color: #FFF9C0;
+}
+
+.right_b {
+    position: relative;
+    background-image: url("/Stastic/Photo/gallery/material-symbols_arrow-back-rounded.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 3%;
+    height: 60%;
+    border: none;
+    left: 63%;
+    z-index: 2;
+}
+.right_b:active {
+    background-color: #FFF9C0;
+}
+}

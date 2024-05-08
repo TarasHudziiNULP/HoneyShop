@@ -1,0 +1,211 @@
+body{
+    overflow: hidden;
+}
+
+@media (min-width: 993px) {
+
+    /*  */
+    .PC_back {
+        position: absolute;
+        width: 100%; 
+        height: 100%; 
+        left: 0;
+        top: 0;
+        background-size: cover; 
+        background-position: center;
+        z-index: 0;
+    }
+
+    /*  */
+    .photo {
+        position: fixed;
+        width: 50%;
+        height: 130%;
+        left: 30%;
+        top: 0%;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+    }
+
+
+    #burger, [for=burger]{
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    top: 4px;
+    z-index: 2;
+}
+
+nav.centered {
+    justify-content: center;
+}
+
+.nav-item {
+    flex: 1; /* Рівномірно розподіляє простір між елементами */
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    margin: 0; 
+    text-align: center; /* Центрувати текст всередині <ul> */
+}
+
+.nav-item li {
+    list-style: none; /* Прибрати маркери списку з елементів <li> */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #947537;
+    padding: 0 10px;
+}
+
+}
+@media (max-width: 500px) {
+
+    .PC_back, .photo{
+        display: none;
+    }
+    .mob_back{
+        position: absolute;
+        width: 100%; /* Ширина контейнера на весь екран */
+        height: 100%; /* Висота контейнера на весь екран */
+        left: 0%;
+        top: 0%;
+        background-size: cover;
+        background-position: center; /* Центрує зображення всередині контейнера */
+        background-color: black;
+        z-index: 0;
+        align-items: center;
+    }
+
+    .mob_pic{
+        position: fixed;
+        width: 110%;
+        height: 90%;    
+        background-position: center;
+        left: 8%;
+        top:10%;
+        z-index: 1;
+    }
+ 
+     .mob_logo{
+        position: fixed;
+        width: 10%;
+        height: auto;
+        left: 3%;
+        top: 3%;
+        z-index: 2;
+    }
+
+
+    nav{
+        display: none;
+    }
+
+    [for=burger]{
+        display: block;
+        z-index: 4;
+        position: fixed;
+        text-align: center;
+        right: 20px;
+        top: 5px;
+        width: 30px;
+        color: #FFD662;
+    }
+    
+    #burger:checked + label + nav {
+        display: block;
+        position: fixed;
+        width: 96%;
+        height: 80%;
+        background: linear-gradient(to bottom, #000000, #FFD662);
+        align-self: center;
+        flex-direction: column;
+        padding: 30px;
+        box-sizing: border-box;
+        z-index: 4;
+
+    }
+
+    /* Стилі для навігаційного списку у вигляді стовпця */
+    #burger:checked + label + nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+        z-index: 4;
+
+    }
+
+    /* Стилі для посилань у навігаційному списку */
+    #burger:checked + label + nav li {
+        list-style: none;
+        padding: 0;
+        padding: 25px;
+        z-index: 4;
+
+    }
+
+    #burger:checked + label + nav a {
+        color: #FFEAAD;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 28px;
+        text-transform: capitalize;     
+        z-index: 4;
+   
+    }
+
+    .button {
+        position: fixed;
+        width: 111px;
+        height: 65px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        z-index: 3;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: #FFF9C0;
+    }
+    
+    .sing_in {
+        background-image: url("/Stastic/Photo/home/Polygon\ 7.png");
+        top: 85%;
+        left: 10%;
+    }
+    
+    .sing_up {
+        background-image: url("/Stastic/Photo/home/Polygon\ 7.png");
+        top: 85%;
+        left: 63%;
+    }
+}
+

@@ -1,0 +1,579 @@
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+
+@media (max-width: 500px) {
+.divider,
+.shop-card,
+.navi-1,
+.navi-2,
+.navi-3 {
+    display: none;
+}
+
+/*  */
+    .div_mob{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-repeat: no-repeat;
+        top: 0%;
+        z-index: 0;
+    }
+/*  */
+    .shop-card-mob {
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        top: 20%;
+        left: 20%;
+    }
+
+    .pict{
+        position: absolute;
+        width: 180%;
+        top: 5%;
+        left: 25%;
+        transform: translate(-22%, -5%);
+    }
+
+    /*  */
+    .honey{
+        position: absolute;
+        width: 70%;
+        top: -5%;
+        left: -10%;
+        z-index: 1;
+    }
+
+    .Name {
+        position: absolute;
+        width: 207px;
+        height: 38px;
+        left: 55%;
+        top: -7%;
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 250%;
+        /* identical to box height, or 38px */
+        text-transform: capitalize;
+        color: #FFC24B;
+    }
+
+    .text{
+        position: absolute;
+        width: 150%;
+        height: 60%;
+        left: -2%;
+        top: 85%;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 175%;
+        text-align: justify;
+        text-transform: uppercase;
+        border: none;
+    
+        color: #FFBA41;
+    
+        /* border: 1px solid #000000; */
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 2;
+    }
+
+    .but_mob{
+        position: absolute;
+        background-image: url("/Stastic/Photo/shop/mob_but.png");
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 20%;
+        left: 30%;
+        top: 157%;
+        background-color: transparent;
+        border: none;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #FFF9C0;
+        z-index: 4;
+    }
+    
+    .but_mob:active{
+        background-color: #b87200;
+    }
+
+    .Size{
+        position: absolute;
+        width: 72px;
+        height: 36px;
+        left: 5%;
+        top: 43%;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        text-transform: capitalize;
+        color: #FFBA41;
+        }
+        
+        .button{
+            position: absolute;
+            width: 49px;
+            height: 62px;
+            left: 40%;
+            top: 60%;
+            background-color: transparent;
+            border: none; 
+        }
+        
+        .size_b{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: transparent;
+            border: none; 
+        }
+        
+        .size_m{
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            background-color: transparent;
+            border: none; 
+            left: 59px;
+        }
+        
+        .size_s{
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            background-color: transparent;
+            border: none;
+            left: 108px; 
+        }
+        
+        .size_b:active,
+        .size_m:active,
+        .size_s:active {
+            background-color: #FFE195;
+        }
+        
+ /* Основний контейнер */
+.info-container {
+    position: absolute;
+    width: 173px;
+    height: 106px;
+    left: 60%;
+    top: 10%;
+
+}
+
+/* Контейнер для кольору, регіону та ціни */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    gap: 5px;
+}
+
+/* Заголовки */
+.label {
+    font-family: 'Podkova';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #FFA400;
+
+    
+}
+
+/* Значення */
+.value {
+    margin-left: 10px;
+    font-weight: 500;
+    color: #FFF9C0;
+}
+
+/* Конкретний стиль для Аромату, Регіону та Ціни */
+.aroma, .region, .price {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+/* Стиль для кольору Аромату та Ціни */
+.color {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+/* Конкретний стиль для Квіткового та Волині */
+.floral, .volyn {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFF9C0;
+}
+
+
+}
+
+
+@media  (min-width: 993px)  {
+   
+.div_mob,
+.shop-card-mob
+{
+    display: none;
+}
+
+    /*  */
+    .divider {
+        width: 100%;
+        height: 18%;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    
+    /*  */
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .shop-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .shop-card {
+        border-radius: 20px;
+        background-color: rgba(255, 184, 69, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* position: absolute;
+        width: 40%;
+        height: 40%;
+        top: 20%;
+        left: 20%;
+        z-index: 1; */
+    }
+
+    .card-container{
+        padding: 0 10% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pict{
+        width: 63%;
+        /* position: absolute;
+        top: 12%; */
+    }
+    
+    .text{
+        position: absolute;
+        width: 614px;
+        height: 185px;
+        left: 50%;
+        top: 0%;
+    
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        text-align: justify;
+        text-transform: uppercase;
+        border: none;
+    
+        color: #FFBA41;
+    
+        border: 1px solid #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+    .size-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Size{
+        margin: 0px;
+        margin-bottom: 5px;
+        /* position: absolute;
+        width: 72px;
+        height: 36px;
+        left: 50%;
+        top: 75%; */
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 200%;
+        text-transform: capitalize;
+        color: #FFBA41;
+    }
+    
+    .button{
+        display: flex;
+        flex-direction: row;
+        /* position: absolute; */
+        /* width: 49px;
+        height: 62px; */
+        /* left: 50%;
+        top: 100%; */
+        background-color: transparent;
+        border: none; 
+    }
+    
+    .size_b{
+        /* position: absolute; */
+        /* width: 100%;
+        height: 100%; */
+        padding: 5px;
+        height: 100%;
+        background-color: transparent;
+        border: none; 
+    }
+    
+    .size_m{
+        /* position: absolute; */
+        /* width: 80%;
+        height: 80%; */
+        padding: 5px;
+        height: 70%;
+        background-color: transparent;
+        border: none; 
+        /* left: 59px; */
+    }
+    
+    .size_s{
+        /* position: absolute; */
+        /* width: 60%;
+        height: 60%; */
+        padding: 5px;
+        height: 40%;
+        background-color: transparent;
+        border: none;
+        /* left: 108px;  */
+    }
+    
+    .size_b:active,
+    .size_m:active,
+    .size_s:active {
+        background-color: #FFE195;
+    }
+    
+    .info {
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* position: absolute; */
+        /* width: 275px;
+        height: 109px; */
+        /* left: 510px;
+        top: 244px; */
+    }
+    
+    /* Стилі для кольору */
+    .color {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        /* position: absolute; */
+        /* width: 171px;
+        height: 36px; */
+        /* left: 0px;
+        top: 0px; */
+    }
+    
+    .aroma, .region, .price {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 200%;
+        text-transform: capitalize;
+    }
+    
+    .aroma-value, .region-value, .price-value {
+        font-weight: 500;
+        color: #FFF9C0;
+    }
+    
+    .aroma {
+        /* width: 76px;
+        height: 36px; */
+        color: #FFBA41;
+    }
+    
+    .aroma-value {
+        margin: 0px;
+        /* width: 90px; */
+    }
+    
+    .region {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        /* position: absolute; */
+        /* width: 139px;
+        height: 36px; */
+        /* left: 0px;
+        top: 38px; */
+    }
+    
+    .region-label {
+        /* width: 68px;
+        height: 36px; */
+        color: #FFBA41;
+    }
+    
+    .region-value {
+        margin: 0px;
+        /* width: 66px; */
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        /* position: absolute; */
+        /* width: 103px;
+        height: 36px; */
+        /* left: 0px;
+        top: 76px; */
+    }
+    
+    .price-label {
+        /* width: 55px; */
+        color: #FFBA41;
+    }
+    
+    .price-value {
+        margin: 0px;
+        /* width: 43px; */
+    }
+
+    .navi{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    
+    /*  */
+    .navi-1 {
+        width: 33px;
+        height: 36px;
+        background-image: url("/Stastic/Photo/shop/Navi.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-color: rgba(28, 23, 15, 0.2);
+        z-index: 2;
+    
+    }
+    /*  */
+    .navi-1:active {
+        background-color: #FFE195; /* Заповнюємо коліром при наведенні */
+    }
+    /*  */
+    .navi-2 {
+        width: 33px;
+        height: 36px;
+        background-image: url("/Stastic/Photo/shop/Navi.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-color: rgba(28, 23, 15, 0.2);
+        z-index: 2;
+    }
+    /*  */
+    .navi-2:active {
+        background-color: #FFE195; /* Заповнюємо коліром при наведенні */
+    }
+    
+    /*  */
+    .navi-3 {
+        width: 33px;
+        height: 36px;
+        background-image: url("/Stastic/Photo/shop/Navi.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-color: rgba(28, 23, 15, 0.2);
+        z-index: 2;
+    }
+    /*  */
+    .navi-3:active {
+        background-color: #FFE195; /* Заповнюємо коліром при наведенні */
+    }
+    
+    .add{
+        /* position: absolute; */
+        box-sizing: border-box;
+        width: 180px;
+        height: 55px;
+        /* bottom: -35%;
+        left: 794px; */
+        background-image: url("/Stastic/Photo/shop/button.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 180px 55px;
+        background-color: rgba(28, 23, 15, 0.2);
+        border: none;
+        text-align: center; 
+        line-height: 50px; 
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFF9C0;
+    }
+    
+    .add:active {
+        background-color: #FFF9C0;
+    }
+}
+

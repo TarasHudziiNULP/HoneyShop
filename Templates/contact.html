@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/Stastic/CSS/style_contact.css">
+</head>
+<body>
+
+<div class="content">
+
+    <div class="main-content">
+        <img class="divider_mob" src="/Stastic/Photo/contact/divider_mob.png" alt="">
+        <div class="contact-form">
+        
+            <!-- <input type="text" placeholder="Напиши своє ПІБ" class="text_1">
+            <img class="line" src="/Stastic/Photo/contact/line.png"></img>
+
+            <input type="email" placeholder="Email" class="text_2">
+            <img class="line_2" src="/Stastic/Photo/contact/line.png"></img>
+            
+            <input type="text" placeholder="Номер телефону" class="text_3">
+            <img class="line_3" src="/Stastic/Photo/contact/line.png"></img>
+            
+            <input type="text" placeholder="Опиши свої пропозиції" class="text_4">
+            <img class="line_4" src="/Stastic/Photo/contact/line.png"></img> 
+            
+            <button class="send">Відправити</button> -->
+            <!-- Form -->
+            <form id="contact-form-id" method="post">
+                <ul>
+                <li>
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" class="text_1" placeholder="Напиши своє ПІБ" required  />
+                    </div>
+                    <img class="line" src="/Stastic/Photo/contact/line.png"></img>
+                </li>
+                <li>
+                    <div>
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_email" class="text_1" placeholder="Email" required  />
+                    </div>  
+                    <img class="line" src="/Stastic/Photo/contact/line.png"></img>
+                </li>
+                <li>
+                    <div>
+                        <label for="tel"></label>
+                        <input type="tel" id="tel" name="user_tel" class="text_1" min="5" placeholder="Номер телефону" />
+                    </div>
+                    <img class="line" src="/Stastic/Photo/contact/line.png"></img>
+                </li>
+                <li>
+                    <div>
+                        <label for="msg"></label>
+                        <textarea id="msg" name="user_message" wrap="hard" class="text_1" placeholder="Опиши свої пропозиції"></textarea>
+                    </div>
+                    <img class="line" src="/Stastic/Photo/contact/line.png"></img>
+                </li>
+                <li class="button">
+                    <button id="sbmBtn" type="submit" class="send">Відправити</button>
+                </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="content-footerpic">
+        <img class="footerpic" src="/Stastic/Photo/contact/footerpic.png" alt="">
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="text_1">Форма успішно відправлена!</p>
+    </div>
+  
+</div>
+
+<script>
+    var formid = document.querySelector("#contact-form-id");
+    formid.addEventListener("submit", function(e){
+        if(formid.checkValidity()){
+            e.preventDefault();
+        } 
+    });
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("sbmBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        if(formid.checkValidity()){
+            modal.style.display = "block";
+        } 
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+        formid.reset();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            formid.reset();
+        }
+    }
+</script>
+</body>
+</html>

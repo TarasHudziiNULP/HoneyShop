@@ -1,0 +1,258 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+@media (max-width: 500px) {
+
+    .about-us, .divider, .video, .text, .text_2,.picture,.logo,.navi_2{
+    display: none;
+}
+    body{
+        background-color: #584B2A;
+        overflow: hidden;
+    }
+
+    .figure{
+    position: absolute;
+    width: 590px;
+    height: 594px;
+    left: -98px;
+    top: -250px;
+    background: #000000;
+    filter: blur(100px);
+    z-index: 1;
+    }
+
+    .back{
+        position: absolute;
+        width: 200%;
+        height: 50%;
+        top: 35%;
+        z-index: 0;
+        left: 0;
+    }
+
+    /*  */
+    .pict_mob{
+        position: absolute;
+        width: 55%;
+        height: 35%;
+        left: 45%;
+        top: 60%;
+        z-index: 2;
+        background-color: transparent;
+    }
+
+    /*  */
+    .logo_mob{
+        position: absolute;
+        z-index: 3;
+        top: 5%;
+        left: 80%;
+    }
+
+    .footer-frame {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        top: 15%;
+        z-index: 3;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .row,
+    .row_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-decoration: none;
+    }
+    
+    .row span,
+    .row_2 span {
+        font-family: 'Montserrat';
+        color: #FFF9C0;
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+    
+    .row span {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 20px;
+        font-variant: small-caps;
+    }
+    
+    .row_2 span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 20px;
+        font-variant: small;
+        z-index: 4;
+    }
+
+
+}
+
+@media  (min-width: 993px)  {
+
+    .pict_mob, .logo_mob {
+    display: none;
+    }
+
+.about-us {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+}
+
+/* divider 2 */
+.divider {
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.video {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    left: 40%;
+    top: 20%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.text {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 5%;
+top: 23%;
+font-family: 'Lora';
+font-style: normal;
+font-weight: 500;
+font-size: 31px;
+line-height: 41px;
+text-transform: none;
+color: #FFF9C0;
+z-index: 1;
+}
+
+.text_2 {
+position: absolute;
+width: 440px;
+height: 100%;
+left: 5%;
+top: 30%;    
+font-family: 'Lora';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 41px; 
+text-transform: none;
+color: #FFF9C0;
+z-index: 1;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 100%;
+}
+
+.picture{
+    position: absolute;
+    left: 75%;
+    top: 100%;
+    z-index: 1;
+}
+
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 160%;
+    z-index: 1;
+}
+
+.navi_2{
+    position: absolute;
+    width: 156px;
+    height: 51px;
+    left: 5%;
+    top: 65%;
+    z-index: 1;
+}
+
+.footer-frame {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    top: 120%
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.row span {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    font-variant: small-caps;
+    color: #FFF9C0;
+    white-space: nowrap;
+}
+
+.row_2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.row_2 span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-variant: small;
+    color: #FFF9C0;
+    white-space: nowrap;
+
+}
+}
